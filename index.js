@@ -5,10 +5,10 @@ function more(){
 
     if (svg['aria-hidden'].value === "true"){
         document.getElementById('explore_svg').setAttribute("aria-hidden", "false");
-        document.getElementById('explore_svg').style.opacity = 0;
+        // document.getElementById('explore_svg').style.opacity = 0;
         } else {
         document.getElementById('explore_svg').setAttribute("aria-hidden", "true");
-        document.getElementById('explore_svg').style.opacity = 1;
+        // document.getElementById('explore_svg').style.opacity = 1;
     }
 
 }
