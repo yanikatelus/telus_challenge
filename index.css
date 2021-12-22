@@ -1,0 +1,227 @@
+
+/* #end{
+    width: 66%;
+    height: inherit;
+    background-color: white; */
+/* } */
+
+body {
+    margin: 0;
+    /* display: flex; */
+    background-image: url("Coding-Challenge-Image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+#start{
+    width: 27%;
+    height: 100vh;
+    background-color: #611818;
+}
+.wrapper{
+    width: 100%;
+    position: absolute;
+    bottom: 17vh;
+    left: 8.75vw;
+    float: left;
+}
+
+#more_button{
+    position: absolute;
+    /* margin-top: 25px; */
+    margin-left: 5.5vw;
+    transition: transform .3s ease-in-out;
+}
+#more_button:hover{
+    transform: rotate(180deg);
+}
+
+#text{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 43px; /* center to button */
+    position: absolute;
+    margin-left: 10vw;
+}
+
+svg{
+    font-family: essonnes-text, serif;
+    font-size: 224px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    line-height: 150px;
+
+    position: absolute;
+    bottom: 17vh;
+    left: 0vw;
+}
+
+#body_wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /* z-index: 0; */
+}
+#exampleModal{
+    /* z-index: 2; */
+    position: fixed; /* Stay in place */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+}
+#modal_content{
+    background-color: white;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    margin-left: 5%;
+    /* top: 50%;
+    -moz-transform:  translateY(-50%);
+    -webkit-transform:  translateY(-50%);
+    transform:  translateY(-50%); */
+}
+#click_more{
+    border:none;
+    background-color: rgba(0,0,0,0); 
+}
+h5#h5_title{
+    font-family: Essonnes;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 66px;
+    line-height: 79px;
+    margin-left: 7%;
+    padding-top: 10%;
+    color: #611818!important;
+}
+
+#modal_body{
+    color: #505050;
+    font-size: 14px;
+    padding: 7%;
+}
+.fade{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2);
+
+}
+#continue_button{
+    border:none;
+    padding: 10px 20px;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(90deg, #611818 0%, #C53030 100%);
+    border-radius: 5px;
+
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: left;
+    margin-left: 7%;
+}
+.modal-footer{
+    display: initial;
+    border: none;
+}
+.modal-header{
+    border: none;
+    padding-left: 0%;
+}
+#path{
+    width: 270px;
+    height: auto;
+    padding-left: 7%;
+}
+.socials{
+    /* float: right; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 73px;
+}
+
+#nav_bar{
+    position: absolute;
+    /* float: left; */
+    width: 9%;
+    height: 100%;
+    background-color: #421010;
+    z-index: 1055;
+    display: none;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 1000px) {
+    #text{
+        margin-left: 14vw;
+    }
+    #start{
+        width: 34%;
+    }
+    #modal_content{
+        width: 70%;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        -moz-transform:  translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    #text{
+        margin-left: 20vw;
+    }
+    #start{
+        width: 37%;
+    }
+    #modal_content{
+        width: 80%;
+        height: auto;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        -moz-transform:  translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .modal{
+        margin: none;
+        padding: none;
+    }
+    .modal-dialog{
+        margin: none;
+        padding: none;
+    }
+  }
+  @keyframes myAnimation{
+    0%{
+      opacity: 1;
+      transform: rotateX(90deg);
+    }
+    50%{
+      opacity: 0.5;
+      transform: rotateX(0deg);
+    }
+    100%{
+      display: none;
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+  }
+/* #explore_svg{
+    animation-name: myAnimation;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+} */
